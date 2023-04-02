@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bekir TUNCER Burç Uygulaması</title>
+</head>
+
+<body>
+    <script>
+        let gun = 15;     // "Doğum gününüzü, Number olarak giriniz"
+        let ay = 9;       // "Doğum ayınızı, Number olarak giriniz"
+        let yil = 1990;   // "Doğum yılınızı, Number olarak giriniz"
+
+        let dogumTarihi = (gun + "." + ay + "." + yil + " ");  // 15.09.1990 şeklinde çıktı alabilmek için
+        
+
+        // && = İkiside dogru ise; True çıktısı alınır.
+        // || = En az 1 i bile; TRUE ise; True çıktısı alınır.
+        if      ((ay == 1 && gun >= 21) || (ay == 2 && gun <= 19)) {
+            console.log((dogumTarihi) + "KOVA, burcusunuz."); }
+
+        else if ((ay == 2 && gun >= 20) || (ay == 3 && gun <= 20)) {
+            console.log((dogumTarihi) + "= BALIK burcusunuz."); }
+
+        else if ((ay == 3 && gun >= 21) || (ay == 4 && gun <= 20)) {
+            console.log((dogumTarihi) + "= KOÇ burcusunuz."); }
+
+        else if ((ay == 4 && gun >= 21) || (ay == 5 && gun <= 21)) {
+            console.log((dogumTarihi) + "= BOĞA burcusunuz."); }
+
+        else if ((ay == 5 && gun >= 22) || (ay == 6 && gun <= 21)) {
+            console.log((dogumTarihi) + "= İKİZLER burcusunuz."); }
+
+        else if ((ay == 6 && gun >= 22) || (ay == 7 && gun <= 22)) {
+            console.log((dogumTarihi) + "= YENGEÇ burcusunuz."); }
+
+        else if ((ay == 7 && gun >= 23) || (ay == 8 && gun <= 22)) {
+            console.log((dogumTarihi) + "= ARSLAN burcusunuz."); }
+
+        else if ((ay == 8 && gun >= 23) || (ay == 9 && gun <= 22)) {
+            
+            console.log((dogumTarihi) + "= BAŞAK burcusunuz."); }
+
+        else if ((ay == 9 && gun >= 23) || (ay == 10 && gun <= 22)) {
+            console.log((dogumTarihi) + "= TERAZİ burcusunuz."); }
+
+        else if ((ay == 10 && gun >= 23) || (ay == 11 && gun <= 21)) {
+            console.log((dogumTarihi) + "= AKREP burcusunuz."); }
+
+        else if ((ay == 11 && gun >= 22) || (ay == 12 && gun <= 21)) {
+            console.log((dogumTarihi) + "= YAY burcusunuz."); }
+
+        else if ((ay == 12 && gun >= 22) || (ay == 1 && gun <= 20)) {
+            console.log((dogumTarihi) + "= OĞLAK burcusunuz."); }
+
+        else {
+            console.log("HATA!: Lütfen geçerli bir tarih giriniz..."); }
+
+    </script>
+</body>
+
+</html>
